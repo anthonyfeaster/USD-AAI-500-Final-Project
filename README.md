@@ -46,7 +46,29 @@ as the project progresses.
 
 ## Setup and Usage
 
-Placeholder. Is this section needed?
+The notebook currently uses Python 3.13. From the repository root, create
+and activate a virtual environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install the required packages:
+
+```bash
+python -m pip install pandas numpy matplotlib seaborn pyarrow ipykernel jupyterlab
+```
+
+`pyarrow` enables pandas to read the Parquet data files.
+
+Open `notebooks/01_initial_eda.ipynb` in VS Code and select the `.venv`
+Python environment as the notebook kernel. Alternatively, run
+`jupyter lab` from the activated environment and open the notebook there.
+
+Restart the kernel and run all cells from top to bottom. Internet access
+is required because the notebook downloads the data from NFLverse.
+Counts and results may change as the ongoing 2026 season data is updated.
 
 ## Key Findings
 
