@@ -49,8 +49,10 @@ The target variable is `third_down_converted`:
 - 0: Unsuccessful conversion
 - 1: Successful conversion
 
-Predictive modeling methods and evaluation procedures will be documented
-as the project progresses.
+`notebooks/model.ipynb` compares a linear model, an identity-link binomial
+model, and a logistic regression, then estimates the logistic model.
+Scrambles are coded as passes. The fit uses the 2023–2025 regular season
+and holds out the partial 2026 season.
 
 ## Methods Used
 
@@ -58,7 +60,7 @@ as the project progresses.
 - Descriptive statistics
 - Exploratory data analysis
 - Data visualization
-- Predictive modeling (planned; methods have not yet been selected)
+- Logistic regression for a binary conversion outcome
 
 ## Technologies
 
@@ -73,6 +75,9 @@ as the project progresses.
 - `data/`: Project datasets.
 - `notebooks/01_initial_eda.ipynb`: Data preparation, exploratory analysis,
   summary tables, and visualizations.
+- `notebooks/model.ipynb`: Comparison of three binary models and the
+  estimated logistic regression.
+- `requirements.txt`: Packages used by the model notebook.
 - `README.md`: Project overview and documentation.
 
 ## Installation and Usage
@@ -100,9 +105,14 @@ Install the required Python packages:
 
 ```bash
 python -m pip install pandas numpy matplotlib seaborn ipykernel jupyterlab
+python -m pip install -r requirements.txt
 ```
 
-Open `notebooks/01_initial_eda.ipynb` in your preferred notebook environment
+`requirements.txt` adds the packages used by `notebooks/model.ipynb`
+(SciPy and statsmodels).
+
+Open `notebooks/01_initial_eda.ipynb` or `notebooks/model.ipynb` in your
+preferred notebook environment
 and select a Python kernel with the required packages installed.
 
 Restart the kernel and run all cells from top to bottom. Run the notebook
