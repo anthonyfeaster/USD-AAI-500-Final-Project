@@ -77,6 +77,9 @@ and holds out the partial 2026 season.
   summary tables, and visualizations.
 - `notebooks/model.ipynb`: Comparison of three binary models and the
   estimated logistic regression.
+- `notebooks/appendix.ipynb`: The exploratory notebook followed by the
+  logistic model, with one result per cell.
+- `report_figures/`: Equation and fitted-curve figures for the report.
 - `requirements.txt`: Packages used by the model notebook.
 - `README.md`: Project overview and documentation.
 
@@ -111,8 +114,8 @@ python -m pip install -r requirements.txt
 `requirements.txt` adds the packages used by `notebooks/model.ipynb`
 (SciPy and statsmodels).
 
-Open `notebooks/01_initial_eda.ipynb` or `notebooks/model.ipynb` in your
-preferred notebook environment
+Open `notebooks/01_initial_eda.ipynb`, `notebooks/model.ipynb`, or
+`notebooks/appendix.ipynb` in your preferred notebook environment
 and select a Python kernel with the required packages installed.
 
 Restart the kernel and run all cells from top to bottom. Run the notebook
